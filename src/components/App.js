@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./../styles/App.css";
+import WeatherDisplay from "./WeatherDisplay";
+
 
 const App = () => {
   const [weather, setWeather] = useState({ temperature: 0, conditions: "" });
@@ -11,7 +13,7 @@ const App = () => {
   return (
     <div>
       <h1>Weather Report</h1>
-      <WeatherDisplay weather={weather} />
+      <WeatherDisplay WeatherDisplay weather={weather} />
     </div>
   );
 };
